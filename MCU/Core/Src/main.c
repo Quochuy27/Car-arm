@@ -441,7 +441,7 @@ PS2_Update();
 		Go();
     HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
   } else if (PS2.DOWN) {
-    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_RESET);
     Back();
 	}
 	else if (PS2.LEFT) {
