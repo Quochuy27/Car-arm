@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"test_hn\startup_stm32f103xb.o"
+"test_hn\ps2.o"
+"test_hn\i2c-lcd.o"
+"test_hn\main.o"
+"test_hn\stm32f1xx_it.o"
+"test_hn\stm32f1xx_hal_msp.o"
+"test_hn\stm32f1xx_hal_gpio_ex.o"
+"test_hn\stm32f1xx_hal_adc.o"
+"test_hn\stm32f1xx_hal_adc_ex.o"
+"test_hn\stm32f1xx_hal.o"
+"test_hn\stm32f1xx_hal_rcc.o"
+"test_hn\stm32f1xx_hal_rcc_ex.o"
+"test_hn\stm32f1xx_hal_gpio.o"
+"test_hn\stm32f1xx_hal_dma.o"
+"test_hn\stm32f1xx_hal_cortex.o"
+"test_hn\stm32f1xx_hal_pwr.o"
+"test_hn\stm32f1xx_hal_flash.o"
+"test_hn\stm32f1xx_hal_flash_ex.o"
+"test_hn\stm32f1xx_hal_exti.o"
+"test_hn\stm32f1xx_hal_i2c.o"
+"test_hn\stm32f1xx_hal_tim.o"
+"test_hn\stm32f1xx_hal_tim_ex.o"
+"test_hn\system_stm32f1xx.o"
+--strict --scatter "test_hn\test_hn.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "test_hn.map" -o test_hn\test_hn.axf
